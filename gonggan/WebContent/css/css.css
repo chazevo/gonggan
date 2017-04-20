@@ -1,0 +1,25 @@
+img {
+	vertical-align: middle;
+}
+
+.menu {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../images/menu-alt-512.png) left center no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+}
+
+.header-content {
+	position:relative;
+	padding:100px 15px;
+	width:100%;
+	text-align:center;
+}
+
+hr {
+	border-color: red;
+	border-width: 3px;
+	max-width: 50px;
+}
