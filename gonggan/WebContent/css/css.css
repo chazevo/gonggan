@@ -1,3 +1,114 @@
+@import url(http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+
+body {
+	font-family: 'Nanum Barun Gothic', sans-serif;
+}
+
+#indexBg {
+	background-color: #1A1D2F;
+}
+
+#loginUserDetail {
+	background-color:white;
+	position: absolute;
+	right: 0px;
+	width: 250px;
+	height: 125px;
+	border: 1px solid black;
+	padding: 5px;
+	z-index: 99;
+}
+
+#loginUserDetail a:link {
+	color: #8C8C8C;
+}
+
+.smallLogoImg {
+	margin: 10px;
+}
+
+.logoImg {
+	width: 40%;
+}
+
+.navbarCustom {
+	min-height:75px;
+	padding-left: 190px;
+	padding-right: 210px;
+	border:1px solid transparent;
+	background: rgba(255, 255, 255, 0);
+}
+
+.navbarCenter {
+	float: left;
+	left: 50%;
+}
+
+.divisionMargin {
+	margin-top: 20px;
+}
+
+#startBtn {
+	background-color: #5E7FB6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+}
+
+input {
+	width: 100%;
+	padding: 5px;
+	border-width:0px;
+	border-radius: 3px;
+}
+
+.contentDiv table {
+	color: #E6E6E6;
+	margin-bottom: 100px;
+}
+
+.contentDiv table a {
+	color: #E6E6E6;
+}
+
+.contentDiv table th {
+	text-align: right;
+	height: 50px;
+	padding-right: 10px;
+}
+
+.contentDiv table table td {
+	border: 1px solid #E6E6E6;
+	height: 100px;
+}
+
+header table {
+	width: 250px;
+}
+
+header td {
+	font-size: 10px;
+	padding: 5px;
+}
+
+header td p {
+	color: white;
+}
+	
+h2 a:link {
+	color: white;
+}
+
+h2 a:visited {
+	color: white;
+}
+
+.idView a:link{
+	color: black;
+	display:block;
+	margin: 5px;
+}
+
 img {
 	vertical-align: middle;
 }
@@ -12,10 +123,25 @@ img {
 }
 
 .header-content {
+	background-color: #E6E6E6;
 	position:relative;
-	padding:100px 15px;
 	width:100%;
 	text-align:center;
+}
+
+
+.header-content-inner {
+	padding:100px;
+}
+
+.header-content-inner a:link {
+	color:white;
+}
+
+.header-content-inner2 {
+	padding-right: 15px;
+	padding-bottom: 15px;
+	text-align: right;
 }
 
 hr {
@@ -23,3 +149,19 @@ hr {
 	border-width: 3px;
 	max-width: 50px;
 }
+
+.divCenter {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	border: 1px solid #E6E6E6;
+}
+
+/*
+.navbar-center {
+	float: right; 
+	position: relative; 
+	left: -25%; 
+}
+*/
