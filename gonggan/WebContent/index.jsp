@@ -34,7 +34,7 @@
 				<a class="" href="#">
 				<img class="smallLogoImg" src="images/KakaoTalk_Photo_2017-04-22-18-18-54.png" width="70px"></a>
 			</div>
-				<div class="collapse navbar-collapse" id="menu"  style="border:1px solid red">
+				<div class="collapse navbar-collapse" id="menu">
 				<!-- collapse 제거 -> 화면 크기 작아졌을 때 생기는 menu 아이콘을 클릭하지 않아도 메뉴가 펼쳐짐  -->
 				<!-- navbar-collapse 제거-> 메뉴 사라짐  -->
 					<ul class="nav navbar-nav navbar-right ">
@@ -74,10 +74,10 @@
 				<p>당신만의 공간에서 당신의 글을 만들어보세요. </p>
 				</td></tr>
 				<tr><td>
-				<input class="divisionMargin" type="text" id="id" placeholder="ID">
+				<input class="divisionMargin login" type="text" id="id" placeholder="ID">
 				</td></tr>
 				<tr><td>
-				<input type="text" placeholder="PASS">
+				<input type="text" class="login" placeholder="PASS">
 				</td></tr>
 				<tr><td>
 				<a href="#"><div id="startBtn" class="divisionMargin">S T A R T</div></a>
@@ -88,7 +88,10 @@
 				<a href="#">회원가입</a>  
 				</td></tr>
 				<tr><td>
-				<a href="#about" class="btn btn-default divisionMargin">NEXT</a>
+				<a href="#about">
+				<img  class="divisionMargin" 
+				src="images/KakaoTalk_Photo_2017-04-24-10-24-18_51.png"
+				width="50%"></a>
 				</td></tr>
 				
 				</table>

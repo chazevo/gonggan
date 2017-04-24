@@ -4,8 +4,79 @@ body {
 	font-family: 'Nanum Barun Gothic', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 #indexBg {
 	background-color: #1A1D2F;
+}
+
+#middleDiv {
+	background-color: #1A1D2F;
+	position:absolute;
+	width:500px;
+	height:450px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+}
+
+span {
+	position: relative;
+}
+
+em {
+	display:none;
+	position: absolute;
+	width: 260px;
+	left:0;
+	top:10px;
+	font-size: 10px;
+	color: #E6E6E6;
+}
+
+input.login {
+	width: 100%;
+	padding: 5px;
+	border-width:0px;
+	border-radius: 3px;
+}
+
+.join {
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	border-bottom: 1px dashed black;
+	padding: 5px;
+	border-width:0px;
+	border-radius: 3px;
+}
+
+
+input.error {
+	border-bottom: 1px dashed red;
+}
+
+.button {
+	position:absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 400px;
+	background: #5E7FB6;
+	border-radius:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:15px;
+	padding-right:15px;
+	font-size: 10pt;
+	color: white;
 }
 
 #loginUserDetail {
@@ -31,6 +102,10 @@ body {
 	width: 40%;
 }
 
+.smallIcon {
+	width: 5%;
+}
+
 .navbarCustom {
 	min-height:75px;
 	padding-left: 190px;
@@ -52,13 +127,6 @@ body {
 	background-color: #5E7FB6;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-radius: 3px;
-}
-
-input {
-	width: 100%;
-	padding: 5px;
-	border-width:0px;
 	border-radius: 3px;
 }
 

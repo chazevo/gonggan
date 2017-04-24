@@ -62,7 +62,11 @@
 					<div class="header-content-inner">
 						<h2><a href="home.jsp">당신만의 공간에서 당신의 글을 만들어보세요.</a></h2>
 					</div>
-					<div class="header-content-inner2"><a href="">zzz</a></div>
+					<div class="header-content-inner2">
+						<a href="">
+						<img class="smallIcon"
+						src="images/KakaoTalk_Photo_2017-04-24-10-28-40_21.png"></a>
+					</div>
 				</div>
 				<div class="navbar-header idView">
 				<!-- navbar-header : 메뉴 버튼 클릭 시 토글 width 100% -->
@@ -115,7 +119,10 @@
 					-->
 						<h3 class="section-heading" style="color:#E6E6E6;"> 2017.04</h3>
 						<table width="100%">
-						<tr><th><a href="">달력으로 보기</a> / <a href="">리스트로 보기</a> </th></tr>
+						<tr><th>
+							<a href=""><img class="smallIcon" src="images/KakaoTalk_Photo_2017-04-24-10-27-35_67.png"></a>
+							<a href=""><img class="smallIcon" src="images/KakaoTalk_Photo_2017-04-24-10-29-26_22.png"></a>
+						</th></tr>
 						<tr><td>
 							<table width="100%">
 								<tbody></tbody>
