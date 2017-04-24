@@ -10,12 +10,9 @@ function onlyNumber(event){
     }
 }
 function blurEvent(object) {
- 
- if ($(object).val() != "") {
-  $(object).next().css('display', 'none');
-  $(object).removeClass("error");
-  $(object).next().removeClass("error");
- }
+	$(object).next().css('display', 'none');
+	$(object).removeClass("error");
+	$(object).next().removeClass("error");
 }
 function confirmInput() {
  
@@ -66,5 +63,7 @@ function goSubmit() {
 	  $("input[name='email']").focus();
 	  return;
 	 }
+	 
+	 document.getElementById('form').submit();
 	 
 }

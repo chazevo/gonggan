@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel='stylesheet' href='css/creative.min.css'/> 
 <link rel='stylesheet' href='css/css.css'/> 
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
