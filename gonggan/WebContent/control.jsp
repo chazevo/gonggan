@@ -65,7 +65,7 @@
 	<header>
 		<div class="header-content">
 			<div class="header-content-inner">
-				<h1><a href="home.jsp">지승이의 블로그</a></h1><hr>
+				<h1><a href="home.jsp">지승이의 블로그!!!!</a></h1><hr>
 				<p style="color:gray"> Hello </p>
 			</div>
 		</div>
