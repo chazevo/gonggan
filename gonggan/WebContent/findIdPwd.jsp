@@ -9,25 +9,18 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<link href="css/magnific-popup.css" rel="stylesheet">
 <link rel='stylesheet' href='css/css.css'/> 
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="js/magnific-popup.min.js"></script>
-<script type="text/javascript" src="js/scrollreveal.min.js"></script>
-<script type="text/javascript" src="js/creative.min.js"></script>
+<script type="text/javascript" src="js/findIdPwd.js"></script> 
 <script type="text/javascript">
-	window.onload = function() {
-		document.getElementById("id").focus();
-	}
 </script>
 </head>
 <body>
 <div id="indexBg">
-<nav class="navbar navbar-default" id="mainNav">
+<nav class="navbar navbar-default">
 		<!--<div class="container-fluid">--><div>
 		<!-- container-fluid : 화면 너비가 resize 되더라도 화면에 가득 참  -->
 			<div class="navbar-header">
@@ -71,62 +64,60 @@
 	<header>
 		<div class="header-content" id="indexBg">
 			<div class="header-content-inner">
-				<table class="loginTable" align="center">
-				<tr><td>
-				<img class="logoImg" src="images/KakaoTalk_Photo_2017-04-22-18-12-10_54.png">
+				<table class="findTable" align="center" border="1">
+				<colgroup>
+					<col width="20%" />
+					<col width="68%" />
+					<col width="12%" />
+				</colgroup>
+				<tr><td colspan="3" class="text-center">
+					<a href="index.jsp">
+						<img class="logoImg" src="images/KakaoTalk_Photo_2017-04-22-18-12-10_54.png">
+					</a>
 				</td></tr>
-				<tr><td>
-				<p>당신만의 공간에서 당신의 글을 만들어보세요. </p>
-				</td></tr>
-				<tr><td>
-				<input class="divisionMargin login" type="text" id="id" placeholder="ID">
-				</td></tr>
-				<tr><td>
-				<input type="text" class=" login" placeholder="PASS">
-				</td></tr>
-				<tr><td>
-				<a href="#"><div id="startBtn" class="divisionMargin">S T A R T</div></a>
-				</td></tr>
-				<tr><td>
-				<a href="findIdPwd.jsp">아이디 찾기</a> | 
-				<a href="findIdPwd.jsp">비밀번호 찾기</a>  | 
-				<a href="join.jsp">회원가입</a>  
+				<tr><td colspan="3">
+					<p class="text-center">아이디 / 비밀번호 찾기</p>
 				</td></tr>
 				<tr>
+					<td><p>아이디 찾기</p></td>
 					<td>
-						<a href="#about" class="page-scroll">
-							<img  class="divisionMargin" 
-							src="images/KakaoTalk_Photo_2017-04-24-10-24-18_51.png"
-							width="50%">
+						이메일을 입력해주세요.&nbsp;
+						<input id="email" class="find" type="text" id="" size="15">
+					</td>
+					<td>
+						<a href="javascript:idFind();">
+							<div id="okBtn">확인</div>
 						</a>
 					</td>
 				</tr>
-				
+				<tr>
+					<td rowspan="3"><p>비밀번호 찾기</p></td>
+					<td>
+						아이디를 입력해주세요.&nbsp;
+						<input type="text" id="id" class="find" size="12">
+					</td>
+					<td rowspan="3">
+						<a href="javascript:pwdFind();">
+							<div id="okBtn">확인</div>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						이메일을 입력해주세요.&nbsp;
+						<input class="find" type="text" id="" size="15">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						핸드폰 번호를 입력해주세요.&nbsp;
+						<input class="find" type="text" id="" size="13">
+					</td>
+				</tr>
 				</table>
 			</div>
 		</div>
 	</header>
-	<section id="about">
-		<img src="images/introducing.jpg" width="100%">
-		<!--
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<h2 class="section-heading" style="color:#ffffff; font-weight:bold">G O N G : G A N </h2>
-					<h5 class="section-heading" style="color:#ffffff;" ></h5>
-					<hr class="light">
-					<div class ="column">
-						<div class ="row">
-							<img src="images/introducing.jpg" width="100%">
-						</div>
-						<br>
-					</div>
-					<a href="#services" class="page-scroll btn btn-default btn-xl sr-button">NEXT</a>
-				</div>
-			</div>
-		</div>
-		-->
-	</section>
 </div>
 </body>
 </html>

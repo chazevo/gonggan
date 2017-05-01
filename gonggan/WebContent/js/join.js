@@ -10,13 +10,18 @@ function onlyNumber(event){
     }
 }
 function blurEvent(object) {
+	
 	$(object).next().css('display', 'none');
-	$(object).removeClass("error");
-	$(object).next().removeClass("error");
+	
+	if ($(object).val() != "") {
+		$(object).removeClass("error");
+		$(object).next().removeClass("error");
+	}
 }
 function confirmInput() {
  
 }
+
 function goSubmit() {
  
 	 if ($("input[name='id']").val() == "") {
@@ -64,6 +69,10 @@ function goSubmit() {
 	  return;
 	 }
 	 
-	 document.getElementById('form').submit();
+	if ($("input[name='pwd']").val() != $("input[name='pwd2']").val()) {
+		alert("패스워드가 일치하지 않습니다. ");
+		$("input[name='pwd']").select();
+		return;
+	 }
 	 
 }

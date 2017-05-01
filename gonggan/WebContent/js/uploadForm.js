@@ -38,24 +38,60 @@ function changeTitle() {
 }
 
 function changeForm() {
-	$(".categoryTable").css("visibility", "hidden");
-	$(".categoryTable").css("position", "absolute");
-	$("." + document.getElementById("category").value).css("visibility", "visible");
+	$("#textarea").focus();
+	
+	if (document.getElementById("category").value == "review") {
+		$("#reviewTbody").css("display", "table-row-group");
+	}
+	else
+		$("#reviewTbody").css("display", "none");
+
+	if (document.getElementById("category").value == "music") {
+		$("#musicTbody").css("display", "table-row-group");
+		document.getElementById("dateTd2").innerHTML =
+			"<input type='checkbox' checked>&nbsp;유튜브 연결";
+	}
+	else
+		$("#musicTbody").css("display", "none");
+
+	if (document.getElementById("category").value == "diary") {
+		document.getElementById("dateTd").innerHTML = "날짜";
+		document.getElementById("dateTd2").innerHTML =
+			"<input type='text' name='toDate' id='toDate' onchange='javascript:changeTitle()'>";
+	}
+	else {
+		document.getElementById("dateTd").innerHTML = "";
+		document.getElementById("dateTd2").innerHTML = "";
+	}
+	
+	if (document.getElementById("category").value == "news") {
+		$("#newsTbody").css("display", "table-row-group");
+	}
+	else
+		$("#newsTbody").css("display", "none");
+
+	if (document.getElementById("category").value == "movie") {
+		$("#movieTbody").css("display", "table-row-group");
+	}
+	else
+		$("#movieTbody").css("display", "none");
+
+	if (document.getElementById("category").value == "place") {
+		$("#placeTbody").css("display", "table-row-group");
+	}
+	else
+		$("#placeTbody").css("display", "none");
+
+	if (document.getElementById("category").value == "book") {
+		$("#bookTbody").css("display", "table-row-group");
+	}
+	else
+		$("#bookTbody").css("display", "none");
 	
 	/*
-	if (document.getElementById("category").value == "diary")
-		$(".diary").css("visibility", "visible");
-	else if (document.getElementById("category").value == "news")
-		$(".news").css("visibility", "visible");
-	else if (document.getElementById("category").value == "place")
-		$(".place").css("visibility", "visible");
-	else if (document.getElementById("category").value == "review")
-		$(".review").css("visibility", "visible");
-	else if (document.getElementById("category").value == "book")
-		$(".book").css("visibility", "visible");
-	else if (document.getElementById("category").value == "movie")
-		$(".movie").css("visibility", "visible");
-	else if (document.getElementById("category").value == "music")
-		$(".music").css("visibility", "visible");
+	else {
+		document.getElementById("appendArea").deleteRow(0);
+	}
 	*/
+	
 }
