@@ -19,7 +19,7 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script type="text/javascript" src="js/controll.js"></script>
-<title>다정 title here</title>
+<title>명규 title here</title>
 <script>
 	$(document).ready(function() {
 		var nav = $(".fixedDiv");
