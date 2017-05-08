@@ -19,7 +19,7 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script type="text/javascript" src="js/controll.js"></script>
-<title>Insert title here</title>
+<title>다정 title here</title>
 <script>
 	$(document).ready(function() {
 		var nav = $(".fixedDiv");
@@ -81,7 +81,7 @@
 <body>
 	<nav class="navbarCustom navbar-default">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index2.do">
+			<a class="navbar-brand" href="index.jsp">
 				<img class="" src="images/KakaoTalk_Photo_2017-04-22-23-02-45.png" width="70px">
 				<img class="" src="images/KakaoTalk_Photo_2017-04-22-18-18-54.png" width="70px"></a>
 		</div>
@@ -95,9 +95,9 @@
 		<img src="images/idclick_icon.png">
 		<table>
 			<tr><td colspan="2"><button>로그아웃</button></td></tr>
-			<tr><td colspan="2"><a href="mypage.do">마이 페이지 </a></td></tr>
+			<tr><td colspan="2"><a href="mypage.jsp">마이 페이지 </a></td></tr>
 			<tr>
-				<td><a href="myhome.do">내 블로그</a></td>
+				<td><a href="home.jsp">내 블로그</a></td>
 				<td><a href="#">이웃 블로그</a></td>
 			</tr>
 		</table>
@@ -110,7 +110,7 @@
 					<stop offset="100%" style="stop-coloR:#91B2DF;stop-opacity:1" />
 				</linearGradient>
 			</defs>
-			<text fill="url(#grad1)" font-size="50" font-family="Verdana" x="0" y="60">
+			<text fill="url(#grad1)" font-size="50" font-family="Verdana" x="0" y="60" >
 			내 </text>
 			<text fill="url(#grad1)" font-size="50" font-family="Verdana" x="50" y="60">
 			블</text>
@@ -133,7 +133,7 @@
 					<div id="blogStatisticsBtn" class="gray">블로그 통계</div>
 				</a>
 			</div>
-			<img id="blogControllImg" src="images/블로그관리_설명_마우스오버시.png" width="60%" class="hidden">
+			<img id="blogControllImg" src="images/블로그관리_설명_마우스오버시.png" width="60%" class="hidden">
 			<img id="blogStatisticsImg" src="images/statistics.png" width="50%" class="hidden">
 		</div>
 		<div id="blogControll" class="divisionMargin2">

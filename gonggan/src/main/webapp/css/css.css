@@ -100,26 +100,199 @@ input.error {
 	color: white;
 }
 
+
+/*uploadform -------------------------------------------------------- */
+.content_allign{
+	width:20px;
+	height:20px;
+}
+
+#dansunline{
+	background-color:#c0c0c0;
+	height:1px;
+	width:98%;
+}
+
+table#uploadtable{
+	margin:10px;
+}
+
+/* body {
+background-color:transparent;
+overflow-x: hidden; } */
+
+#uploadFormDiv{
+	padding:10px;
+
+}
+
+#tagadddbtn{
+	display: inline-block;
+	background:linear-gradient(to right, #DEACC6, #91B2DF);
+	opacity:0.3;
+	color: white;
+	border-radius:20px;
+	padding:3px;
+	width: 120px;
+	height:25px;
+	font-size: 12px;
+	text-align: center;
+	left:0;
+	right:0;
+	margin: auto;
+	border:none;
+}
+
+
+#booksearchBtn, #newssearchBtn{
+	display: inline-block;
+	background:linear-gradient(to right, #DEACC6, #91B2DF);
+	opacity:0.3;
+	color: white;
+	border-radius:20px;
+	padding:3px;
+	width: 80px;
+	height:25px;
+	font-size: 12px;
+	text-align: center;
+	left:0;
+	right:0;
+	margin: auto;
+	border:none;
+}
+
+
+
+/*  */
+
+
+
+/* ++++++++++++++++++++++++++++ */
+
+
 #loginUserDetail {
-	position: absolute;
-	right: 0px;
-	z-index: 99;
+   /*
+   background: url('/gonggan/images/idclick_icon.png') no-repeat ;
+   background-size:100% 100%;
+    background-repeat: no-repeat;
+   */
+   position: absolute;
+   right: 60px;
+   z-index: 99;
+   width:25%;
 }
 
 #loginUserDetail table {
-	position: absolute;
-	top:0;
-	bottom:0;
-	margin:auto;
 }
 
 #loginUserDetail td {
-	padding-left:10px;
 }
 
-#loginUserDetail a:link {
-	color: #8C8C8C;
+
+#idclick_table td>a:link {
+   color: #8C8C8C;
 }
+
+#idclick_table td>a:visited{
+   color: #8C8C8C;
+}
+
+#idclick_table font a{
+   color:#2D86C9;
+}
+
+#idclick_table font a:hover {
+   color: #2D86C9;
+}
+
+
+
+#idclick_table {
+   height:100%;
+   margin:5px;
+   /*
+   border: 1px solid blue;
+   position: absolute;
+   top:0;
+   bottom:0;
+   margin:auto;
+   */
+}
+
+
+#idclick_table td {
+   padding:5px;
+}
+
+.grayTd {
+   background-color:#E6E6E6;
+}
+
+#tr_top_icon{
+   text-align: center;
+   margin:auto;
+}
+   
+/* 삼각형icon들어간 영역 */
+#tr_top_icon img{
+   width:30px;
+   height:30px;
+   /* border:1px solid red; */
+
+}
+
+/* table들어간 영역 */
+#box_icon{
+
+   display:table;
+   width:auto;
+   background-color:white;
+   border: 1px solid #c0c0c0;
+}
+
+/* 테이블 첫번째 tr만 center정렬 */
+#center_align{
+   text-align:center;
+   margin:0 auto;
+}
+
+
+/* idclick 시 나오는 알림창에서 가로줄!! */
+#dansun_line{
+   text-align:center;
+   margin:0 auto;
+   width:99%;
+   height:1px;
+   background-color:#c0c0c0;
+}
+
+
+
+#idclick_new_icon{
+   width:15px;
+   height:15px;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #blogStatisticsImg {
 	position:absolute;
@@ -249,6 +422,7 @@ textarea {
 
 .uploadFormDiv td img {
 	width: 20px;
+	border: 1px solid red;
 }
 
 .footerDiv>div {
@@ -445,7 +619,7 @@ img {
 	background:linear-gradient(to right, #CE729B, #2D86C9);
 	font-size: 9px;
 	color: #8C8C8C;
-	height:242px;
+	height:225px;
 }
 
 .blogHomeHeader a {
@@ -576,7 +750,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 100px;
-	border: 1px solid #E6E6E6;
+	/* border: 1px solid #E6E6E6; */
 }
 
 /*
@@ -810,7 +984,7 @@ img {
 }
 
 .fileInputTextbox {
-	width:85%;
+	width:45%;
 	float:left;
 }
 
@@ -897,7 +1071,7 @@ fieldset img {
 }
 
 fieldset input[type=text].full {
-	width:100%;
+	width:60%;
 }
 
 fieldset .footerDiv a {

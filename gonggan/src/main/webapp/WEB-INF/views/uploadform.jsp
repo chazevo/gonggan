@@ -17,21 +17,18 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/uploadForm.js"></script>
-<title>Insert title here</title>
+<title>uploadform.jsp</title>
 <script>
 	$(document).ready(function() {
 		document.getElementById("textarea").focus();
 		$("[data-toggle='tooltip']").tooltip();
 	});
-	function run() {
-		document.getElementById('dhtmlframe').contentWindow.document.designMode = "on";
-	}
 </script>
 </head>
-<body onload="run();">
+<body>
 	<nav class="navbarCustom navbar-default">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index2.do">
+			<a class="navbar-brand" href="index.jsp">
 				<img class="" src="images/KakaoTalk_Photo_2017-04-22-23-02-45.png" width="70px">
 				<img class="" src="images/KakaoTalk_Photo_2017-04-22-18-18-54.png" width="70px"></a>
 		</div>
@@ -47,7 +44,7 @@
 			<div id="loginUserDetail" class="hidden">
 				<table>
 					<tr><td colspan="2"><button>로그아웃</button></td></tr>
-					<tr><td colspan="2"><a href="mypage.do">마이 페이지 </a></td></tr>
+					<tr><td colspan="2"><a href="mypage.jsp">마이 페이지 </a></td></tr>
 					<tr>
 						<td><a href="#">내 블로그</a></td>
 						<td><a href="#">이웃 블로그</a></td>
@@ -56,10 +53,10 @@
 			</div>
 			<div class="header-content">
 				<div class="header-content-inner">
-					<h2><a href="myhome.do">당신만의 공간에서 당신의 글을 만들어보세요.</a></h2>
+					<h2><a href="home.jsp">당신만의 공간에서 당신의 글을 만들어보세요.</a></h2>
 				</div>
 				<div class="header-content-inner2">
-					<a href="controll.do">
+					<a href="controll.jsp">
 					<img class="smallIcon"
 					src="images/KakaoTalk_Photo_2017-04-24-10-28-40_21.png"></a>
 				</div>
@@ -103,13 +100,13 @@
 		</div>
 		
 		<section>	
-			<div class="uploadFormDiv">
-				<table width="100%" border="1">
+			<div class="uploadFormDiv" > <!-- style="border:1px;"  -->
+				<table width="90%" id="uploadtable" border="1" > <!--  border="1" -->
 					<colgroup>
 						<col width="20%" />
-						<col width="30%" />
+						<col width="25%" />
 						<col width="20%" />
-						<col width="30%" />
+						<col width="25%" />
 					</colgroup>
 					<tr>
 						<td>분류 </td>
@@ -132,7 +129,7 @@
 					<!--<input type="hidden" id="title">-->
 					<tr>
 						<td colspan="4">
-							<button type="button" data-toggle="collapse" data-target="#tag">태그 추가하기</button>
+							<button type="button" data-toggle="collapse" data-target="#tag" id="tagadddbtn">태그 추가하기</button>
 							<div id="tag" class="collapse">
 								<input type="text"><button>확인</button>
 							</div>
@@ -147,16 +144,27 @@
 						</td>
 						<td></td>
 						<td>정렬</td>
-						<td></td>
+						<td>
+							<input type="image"  src="images/align_left_icon.png" id="content_allign_left"  width="15px"> &nbsp; &nbsp;
+							<input type="image"  src="images/align_center_icon.png" id="content_allign_center" width="15px"> &nbsp; &nbsp;
+							<input type="image" src="images/align_right_icon.png" id="content_allign_right" width="15px"> &nbsp;
+						</td>
+						
 					</tr>
 					<tbody id="bookTbody" style="display:none">
 						<tr>
-							<td colspan="4" align="right">
+							<td colspan="4" align="center">
 									<a data-toggle="collapse" data-target="#book">책 찾아보기</a>
 									<div id="book" class="collapse text-center">
-										<h3>도서 검색 </h3>
-										제목&nbsp;<input type="text"><br>
-										저자&nbsp;<input type="text">
+										<!-- <h4>도서 검색 </h4> --><br>
+										제목&nbsp;<input type="text">&nbsp;&nbsp;&nbsp;
+										저자&nbsp;<input type="text">&nbsp;&nbsp;&nbsp;
+										<button type="button" id="booksearchBtn">도 서 검 색</button><br><br>
+										
+										
+										검색도서 표시 <br>
+										검색도서 표시 <br><br>
+										<button type="button" id="booksearchBtn">추 가 하 기</button>
 									</div>
 								</td>
 						</tr>
@@ -166,7 +174,7 @@
 							<td colspan="4" align="right">
 									<a data-toggle="collapse" data-target="#place">장소 찾아보기</a>
 									<div id="place" class="collapse text-center">
-										<h3>장소 검색 </h3>
+										<h4>장소 검색 </h4>
 										장소&nbsp;<input type="text">
 									</div>
 								</td>
@@ -193,15 +201,16 @@
 					</tbody>
 					<tbody id="newsTbody" style="display:none">
 						<tr>
-							<td colspan="4" align="right">
-								<a data-toggle="collapse" data-target="#news">기사 찾아보기</a>
+							<td colspan="4" align="center">
+								<a data-toggle="collapse" data-target="#news">기사 찾아보기<img></a>
 								<div id="news" class="collapse">
 									<table width="100%">
+									<tr><td width="25%" align="center">인기검색어</td><td><h5 style="text-align:center;">기사 검색</h5></td></tr>
 									<tr>
-										<td>인기검색어</td>
-										<td>
-											<h3>기사 검색 </h3>
-											키워드&nbsp;<input type="text">
+										<td align="center" >대선후보<br>아이유 컴백<br> </td>
+										<td width="65%" >
+											키워드&nbsp;<input type="text">&nbsp;&nbsp;&nbsp;
+											<button type="button" id="newssearchBtn">기 사 검 색</button><br><br>
 										</td>
 									</tr>
 									</table>
@@ -229,10 +238,18 @@
 							</td>
 						</tr>
 					</tbody>
+					
+					<tr>
+						 <td colspan="4" align="center" height="30px"><div id="dansunline"></div></td>
+						</tr>
+						
+					
 					<tr>
 						<td class="uploadContent" colspan="4">
-						<IFRAME src='test1.html' id=dhtmlframe></IFRAME>
-							<textarea id="textarea" rows="20" id="content"></textarea>
+							 <!-- <textarea id="textarea" rows="20" id="content" ></textarea> --> 
+							 <iframe id='edit' style='width:300px;height:200px;' ></iframe>
+
+							
 						</td>
 					</tr>
 					<tr><td colspan="4"><input type="checkbox">&nbsp;나만보기</td></tr>
@@ -256,10 +273,3 @@
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-

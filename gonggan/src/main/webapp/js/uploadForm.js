@@ -10,7 +10,7 @@ $(function() {
 		showOtherMonths: true,    /* 이전/다음 달 일수 보이기 */
 		selectOtherMonths: true,    /* 이전/다음 달 일 선택하기 */
 		showOn: "button",
-		buttonImage: "images/calendar-icon-200x200.png",
+		buttonImage: "images/calendar_icon.png",
 		buttonImageOnly: true,
 		minDate: '-30y',
 		closeText: '닫기',

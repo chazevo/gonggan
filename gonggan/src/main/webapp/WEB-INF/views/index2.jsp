@@ -116,7 +116,7 @@
 								</td><td></td></tr>
 							</tbody>
 							<tr><td colspan="2" align="center">
-								<img width="200px" height="2px" src="images/KakaoTalk_Photo_2017-04-26-10-46-42_84.png">
+								<img width="98%" height="2px" src="images/KakaoTalk_Photo_2017-04-26-10-46-42_84.png">
 							</td></tr>
 							<tr>
 								<td>서로이웃 신청_<font color="#2D86C9"><b>6</b></font></td>
@@ -162,8 +162,8 @@
 				<b><a href="">내 블로그 소식</a></b>
 				<a href="">나의 흔적</a> <!-- 내가 쓴 댓글들  -->
 				<a href="">이웃 블로그</a><!-- 이웃 블로그 목록, 이웃 새글 -->
-				<a href="uploadform.do">포스트 쓰기</a>
-				<a href="myhome.do"><div class="goToMyBlog">내 블로그 </div></a>
+				<a href="uploadform.jsp">포스트 쓰기</a>
+				<a href="home.jsp"><div class="goToMyBlog">내 블로그 </div></a>
 				<img src="images/KakaoTalk_Photo_2017-04-26-10-24-13.png" width="50px">
 			</div>
 		</div>
@@ -206,7 +206,7 @@
 							<a href="">서울에서 독일 기자가 타본 기아 K7</a>
 						</td></tr>
 						<tr class="trBottom">
-							<td><a href="">자동차</a></td>
+							<td><a href="">aekwdja</a></td>
 							<td class="rightAlign">
 								<label class='checkbox-wrap'>
 									<input type='checkbox' id='' onclick='like();'>
@@ -226,7 +226,7 @@
 							<a href="">'저질 체력' 어쩌다 이렇게 되었을까?</a>
 						</td></tr>
 						<tr class="trBottom">
-							<td><a href="">사회</a></td>
+							<td><a href="">dani_jj</a></td>
 							<td class="rightAlign">
 								<label class='checkbox-wrap'>
 									<input type='checkbox' id='' onclick='like();'>
@@ -246,7 +246,7 @@
 							<a href="">서울에서 독일 기자가 타본 기아 K7</a>
 						</td></tr>
 						<tr class="trBottom">
-							<td><a href="">사회</a></td>
+							<td><a href="">부릉부릉달</a></td>
 							<td class="rightAlign">
 								<label class='checkbox-wrap'>
 									<input type='checkbox' id='' onclick='like();'>
@@ -266,7 +266,7 @@
 							<a href="">'저질 체력' 어쩌다 이렇게 되었을까?</a>
 						</td></tr>
 						<tr class="trBottom">
-							<td><a href="">사회</a></td>
+							<td><a href="">cocoBabi</a></td>
 							<td class="rightAlign">
 								<label class='checkbox-wrap'>
 									<input type='checkbox' id='' onclick='like();'>
@@ -286,7 +286,7 @@
 						<a href="">유럽여행에서 유용했던 나만의 팁</a>
 					</td></tr>
 					<tr class="trBottom">
-						<td><a href="">해외여행</a></td>
+						<td><a href="">hikari_s</a></td>
 						<td class="rightAlign">
 							<label class='checkbox-wrap'>
 								<input type='checkbox' id='' onclick='like();'>
@@ -306,7 +306,7 @@
 							<a href="">편견을 깨는 시도가 돋보이는 영화 '오두막'</a>
 						</td></tr>
 						<tr class="trBottom">
-							<td><a href="">영화</a></td>
+							<td><a href="">guguru</a></td>
 							<td class="rightAlign">
 								<label class='checkbox-wrap'>
 									<input type='checkbox' id='' onclick='like();'>
@@ -326,7 +326,7 @@
 							<a href="">유럽여행에서 유용했던 나만의 팁</a>
 						</td></tr>
 						<tr class="trBottom">
-							<td><a href="">해외여행</a></td>
+							<td><a href="">Angelica</a></td>
 							<td class="rightAlign">
 								<label class='checkbox-wrap'>
 									<input type='checkbox' id='' onclick='like();'>
@@ -346,7 +346,7 @@
 								<a href="">편견을 깨는 시도가 돋보이는 영화 '오두막'</a>
 							</td></tr>
 							<tr class="trBottom">
-								<td><a href="">영화</a></td>
+								<td><a href="">zoozo</a></td>
 								<td class="rightAlign">
 									<label class='checkbox-wrap'>
 										<input type='checkbox' id='' onclick='like();'>

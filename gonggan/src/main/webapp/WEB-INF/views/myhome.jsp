@@ -55,11 +55,10 @@ System.out.println(str);
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.js"></script>
-<script src="js/myhome.js"></script>
+<script src="js/home.js"></script>
 <script type="text/javascript">
 var year = <%= year %>;
 var month = <%= month %>;
-var month_ = month;
 var today = <%= today %>;
 var firstday = <%= firstday %>;
 var lastdate = <%= lastdate %>;
@@ -81,13 +80,27 @@ var lastdate = <%= lastdate %>;
 				$("#loginUserDetail").hide();
 			}
 		});
+		
+		$(".hover").hover(function(){
+			//$(this).css("backgroundColor", "gray");
+			if ($(".hover").hasClass("grayTd"))
+				$(this).removeClass("grayTd");
+			else
+				$(this).addClass("grayTd");
+		});
+		
+		/*
+		$(".hover").onblur(function(){
+			$(this).css("backgroundColor", "white");
+		});
+		*/
 	}
 </script>
 </head>
 <body>
 	<nav class="navbarCustom navbar-default">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="index2.do">
+			<a class="navbar-brand" href="index.jsp">
 				<img class="" src="images/KakaoTalk_Photo_2017-04-22-23-02-45.png" width="70px">
 				<img class="" src="images/KakaoTalk_Photo_2017-04-22-18-18-54.png" width="70px"></a>
 		</div>
@@ -97,26 +110,87 @@ var lastdate = <%= lastdate %>;
 							class="img-circle">&nbsp;chazevo 님 </a>
 		</div>
 	</nav>
-	<div id="loginUserDetail" class="hidden">
-		<img src="images/idclick_icon.png">
-		<table>
-			<tr><td colspan="2"><button>로그아웃</button></td></tr>
-			<tr><td colspan="2"><a href="mypage.do">마이 페이지 </a></td></tr>
-			<tr>
-				<td><a href="#">내 블로그</a></td>
-				<td><a href="#">이웃 블로그</a></td>
-			</tr>
-		</table>
-	</div>
+	
+	
+	
+	
+	
+	
+	
+	<!-- 다정다정다정다정ㄷ자ㅓㅇ -->
+	
+	<!-- 다정다정 -->
+   
+      <div id="loginUserDetail" class="hidden">
+      
+
+<!--          <div id="tr_top_icon" >
+            <img src="images/tr_top_icon.png" >
+         </div> -->
+         
+      <div id="box_icon">
+           <table id="idclick_table">
+              <tr id="center_align">
+                    <td>
+                          <a href="mypage.jsp">마이페이지</a>&nbsp;&nbsp; |  &nbsp;&nbsp;
+                          <a href="#">내블로그</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                          <a href="#">이웃 블로그</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                          <a href="#">로그아웃</a> 
+                          <div id="dansun_line"></div>
+                    </td>
+              </tr> 
+                   
+              <tr>
+                    <td>
+                          알림&nbsp; <img src="images/idclick_new_icon.png" id="idclick_new_icon">
+                    </td>
+              </tr>
+        
+              <!-- <tr>
+                    <td class="hover">
+                         <font><a href="#"> 이대장 님이</a></font> <a href="#">동갑내기 부부의 세계로 가는 자전거 여행| 게시글에 댓글을 남기셨습니다.</a>
+                    </td>
+              </tr>
+              <tr>
+                    <td class="hover">
+                          <font><a href="#"> 긍정의아이콘|토리|</a></font> <a href="#">님이 토리와 함께 추억쌓기 놀이 | 게시글에 좋아요를 누르셨습니다.</a>
+                    </td>
+              </tr> -->
+                 
+               <tr>
+                    <td class="hover">
+                          chazevo님의 알림이 없습니다.
+                    </td>
+              </tr>  
+                 
+                 
+        </table>
+         </div>
+   </div>
+   
+   
+   
+   
+   
+   <!-- END다정다정 -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<div class="divCenter">
 		<!--<div class="container-fluid">--><div>
 		<!-- container-fluid : 화면 너비가 resize 되더라도 화면에 가득 참  -->
 			<div class="header-content">
 				<div class="header-content-inner">
-					<h2><a href="myhome.do">당신만의 공간에서 당신의 글을 만들어보세요.</a></h2>
+					<h2><a href="home.jsp">당신만의 공간에서 당신의 글을 만들어보세요.</a></h2>
 				</div>
 				<div class="header-content-inner2">
-					<a href="controll.do">
+					<a href="controll.jsp">
 					<img class="smallIcon"
 					src="images/KakaoTalk_Photo_2017-04-24-10-28-40_21.png"></a>
 				</div>
@@ -174,7 +248,7 @@ var lastdate = <%= lastdate %>;
 						<table width="100%">
 						<tr>
 							<th>
-								<a href="uploadform.do">포스트 쓰기 </a>
+								<a href="uploadform.jsp">포스트 쓰기 </a>
 								<label class='radio-wrap'>
 									<input type='radio' name='listType' id='calendar'  onclick='requestList();' checked>
 									<i class='calendar-icon'></i>
@@ -188,9 +262,7 @@ var lastdate = <%= lastdate %>;
 						<tr>
 							<td>
 								<h3 class="section-heading text-center" style="color:#E6E6E6;">
-									<a href="javascript:lastMonth();"><</a>&nbsp;
 									<span id="year"></span>.<span id="month"></span>.<span id="today"></span>
-									&nbsp;<a href="javascript:nextMonth();">></a>
 								</h3>
 							</td>
 						</tr>
