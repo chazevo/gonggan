@@ -107,6 +107,23 @@ input.error {
 	height:20px;
 }
 
+#tagaddOkBtn{
+   display: inline-block;
+   background:linear-gradient(to right, #DEACC6, #91B2DF);
+   opacity:0.3;
+   color: white;
+   border-radius:20px;
+   padding:3px;
+   width: 60px;
+   height:25px;
+   font-size: 12px;
+   text-align: center;
+   left:0;
+   right:0;
+   margin: auto;
+   border:none;
+}
+
 #dansunline{
 	background-color:#c0c0c0;
 	height:1px;
