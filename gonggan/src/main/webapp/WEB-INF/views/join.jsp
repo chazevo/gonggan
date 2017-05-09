@@ -18,6 +18,7 @@
 			});
 		$("input").click(function() {
 			$(this).next().css("display", "block");
+			
 			});
 		
 		$("input[name='id']").focus();

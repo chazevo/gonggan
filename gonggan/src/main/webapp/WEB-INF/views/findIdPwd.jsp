@@ -105,15 +105,15 @@
 				<tr>
 					<td>
 						이메일을 입력해주세요.&nbsp;
-						<input class="find" type="text" id="" size="15">
+						<input class="find" type="text" id="email2" size="15">
 					</td>
 				</tr>
-				<tr>
+	<!-- 			<tr>
 					<td>
 						핸드폰 번호를 입력해주세요.&nbsp;
-						<input class="find" type="text" id="" size="13">
+						<input class="find" type="text" id="phone" size="13">
 					</td>
-				</tr>
+				</tr> -->
 				</table>
 			</div>
 		</div>

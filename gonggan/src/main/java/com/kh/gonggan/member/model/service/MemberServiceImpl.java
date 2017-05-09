@@ -1,6 +1,7 @@
 package com.kh.gonggan.member.model.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,10 +51,14 @@ public class MemberServiceImpl implements MemberService{
 	public Member selectId(String email){
 		return memberDao.selectId(email);
 	}//아이디 찾기
-	
+/*	
 	@Override
 	public Member selectPw(String memberId, String email){
 		return memberDao.selectPw(memberId, email);
+	}*/
+	@Override
+	public String getPw(Map<String, Object> paramMap){
+		return memberDao.getPw(paramMap);
 	}
 	
 

@@ -5,15 +5,11 @@
 <mapper namespace="membermapper">
 
 	<resultMap id="memberResult" type="member">
-		<id property="userid" column="userid" />
-		<result property="userpwd" column="userpwd" />
-		<result property="username" column="username" />
+		<id property="member_id" column="member_id" />
+		<result property="member_pw" column="member_pw" />
+		<result property="member_name" column="member_name" />
 		<result property="email" column="email" />
-		<result property="gender" column="gender" />
-		<result property="phone" column="phone" />
-		<result property="address" column="address" />
-		<result property="hobby" column="hobby" />
-		<result property="birth" column="birth" />
+		<result property="profile" column="profile" />
 	</resultMap>
 
 	<select id="loginSelect" parameterType="member"  resultMap="memberResult">
@@ -28,8 +24,8 @@
 	select 
 	</select>
 	
-	<select id="selectPw">
-	select 
+	<select id="selectPw" parameterType="Map" resultMap="memberResult">
+	select MEMBER_PW FROM MEMBER WHERE MEMBER_ID = #{memberId} and EMAIL = #{email}
 	</select>
 	
 	<insert id="minsert">

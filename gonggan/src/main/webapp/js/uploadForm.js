@@ -1,3 +1,4 @@
+
 $(function() {
 	$( "#toDate" ).datepicker({
 		inline: true,
@@ -31,7 +32,31 @@ $(function() {
 		}
 	});
 });
+/*-------------------------------------------------------- */
+function tagaddfunc(){
+	
+	if($("#tagaddtext").val() != "" ) {
+		$("#tagview").html($("#tagview").html() + "<span>" + $("#tagaddtext").val()
+				+ " <a href='#' onclick='deleteTag(this);'><img src='images/x_icon.png'></a>&nbsp;</span>");
+	}
+	$("#tagaddtext").val("");
+	
+}
 
+function deleteTag(obj){
+	
+	var span = obj.parentNode;
+	var td = span.parentNode;
+	
+	td.removeChild(span);
+}
+
+function run(){
+	document.getElementById('editor').contentWindow.document.designMode="on";
+}
+
+
+/*-------------------------------------------------------- */
 function changeTitle() {
 	document.getElementById("title").value = document.getElementById("toDate").value;
 	alert(document.getElementById("title").value);

@@ -20,12 +20,14 @@
 <title>uploadform.jsp</title>
 <script>
 	$(document).ready(function() {
-		document.getElementById("textarea").focus();
+		//document.getElementById("textarea").focus();
 		$("[data-toggle='tooltip']").tooltip();
+		
+	
 	});
 </script>
 </head>
-<body>
+<body onload='run();'>
 	<nav class="navbarCustom navbar-default">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="index.jsp">
@@ -128,13 +130,18 @@
 					</tr>
 					<!--<input type="hidden" id="title">-->
 					<tr>
-						<td colspan="4">
+						<td>
 							<button type="button" data-toggle="collapse" data-target="#tag" id="tagadddbtn">태그 추가하기</button>
-							<div id="tag" class="collapse">
-								<input type="text"><button>확인</button>
+							<div id="tag" class="collapse">					
+								<input id="tagaddtext" type="text"  size="6" 
+									onkeydown="if(event.keyCode ==13) tagaddfunc();"><button id="tagaddOkBtn"  onclick="tagaddfunc();">확인</button>
 							</div>
 						</td>
+						<td colspan="3" id="tagview"></td>
 					</tr>
+					
+					
+					
 					<tr>
 						<td>
 							<select id="" onchange="">
@@ -247,7 +254,8 @@
 					<tr>
 						<td class="uploadContent" colspan="4">
 							 <!-- <textarea id="textarea" rows="20" id="content" ></textarea> --> 
-							 <iframe id='edit' style='width:300px;height:200px;' ></iframe>
+							 <iframe id='editor' src="uploadHtml.do" style='width:300px;height:200px;' ></iframe>
+							 
 
 							
 						</td>

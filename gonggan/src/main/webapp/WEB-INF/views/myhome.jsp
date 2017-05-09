@@ -94,8 +94,10 @@ var lastdate = <%= lastdate %>;
 			$(this).css("backgroundColor", "white");
 		});
 		*/
+
 	}
-</script>
+	
+	</script>
 </head>
 <body>
 	<nav class="navbarCustom navbar-default">

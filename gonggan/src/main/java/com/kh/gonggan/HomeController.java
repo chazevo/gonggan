@@ -64,6 +64,12 @@ public class HomeController {
 		return "uploadform";
 	}
 
+	@RequestMapping(value = "uploadHtml.do", method = RequestMethod.GET)
+	public String uploadHtml(Locale locale, Model model) {
+		logger.info("Welcome uploadHtml! ");
+		return "uploadHtml";
+	}
+	
 	@RequestMapping(value = "join.do", method = RequestMethod.GET)
 	public String join(Locale locale, Model model) {
 		logger.info("Welcome join! ");
