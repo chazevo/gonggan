@@ -1,3 +1,3 @@
-function like() {
+function like(obj,writerId, postId) {
 	
 }
